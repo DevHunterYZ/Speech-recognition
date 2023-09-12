@@ -3,7 +3,7 @@ import speech_recognition as sr
 r = sr.Recognizer()
 
 #    supported formats: WAV, AIFF, AIFF-C, FLAC
-file = sr.AudioFile('D:/bol.wav')
+file = sr.AudioFile('example.wav')
 with file as source:
       r.adjust_for_ambient_noise(source)
       audio = r.record(source)
